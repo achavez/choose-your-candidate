@@ -9,7 +9,7 @@ export default class {
 
   goTo(stepNumber) {
     this.$el.find('.progress-bar').css({
-      width: `${(stepNumber / this.numSteps) * 100}%`,
+      width: `${(stepNumber / (this.numSteps - 1)) * 100}%`,
     });
   }
 }

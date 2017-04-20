@@ -26,6 +26,34 @@ html, body {
   font-family: "Bungee Inline";
 }
 
+.steps .thermometer-choice {
+  img {
+    width: 30%;
+    float: left;
+  }
+  .btn-group-vertical {
+    width: 65%;
+    float: left;
+    position: relative;
+    padding-bottom: 116%;
+
+    .btn:first-child {
+      position: absolute;
+      top: 2%;
+    }
+
+    .btn:nth-child(2) {
+      position: absolute;
+      top: 43%;
+    }
+
+    .btn:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
 .question {
   font-size: 35px;
   line-height: 35px;

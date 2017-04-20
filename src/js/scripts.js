@@ -1,1 +1,1 @@
-alert('hey');
+import $ from 'jquery';

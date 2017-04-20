@@ -1,5 +1,68 @@
+@import 'bootswatch/lumen/variables';
 @import 'bootstrap';
+@import 'bootswatch/lumen/bootswatch';
 
-body {
-  background: red;
+@import 'forms';
+
+html, body {
+  overflow-y: hidden;
+  font-family: "Roboto Condensed", serif;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.question {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+.steps {
+  padding-left: 0;
+
+  li {
+    padding: 20px;
+    height: calc(100vh - 55px);
+    margin-bottom: 55px;
+    list-style-type: none;
+
+    box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.25);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .btn-group-vertical {
+    margin-bottom: 15px;
+    text-align: center;
+
+    .btn {
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+  }
+}
+
+.progress-dock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 55px;
+
+  .progress {
+    margin: 15px;
+    height: 25px;
+  }
 }

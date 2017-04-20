@@ -17,7 +17,10 @@ const reload = browserSync.reload;
 gulp.task('sass', () => {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass({
-      includePaths: './node_modules/bootstrap-sass/assets/stylesheets/',
+      includePaths: [
+        './node_modules/bootstrap-sass/assets/stylesheets/',
+        './node_modules/',
+      ],
     }).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 });
@@ -57,7 +60,7 @@ gulp.task('watch', () => {
 
   browserSync.init({
     files: ['./dist/**/*'],
-    open: 'local',
+    open: 'external',
     reloadDebounce: 350,
     server: {
       baseDir: './dist/'

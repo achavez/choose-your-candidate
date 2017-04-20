@@ -6,7 +6,7 @@
 
 html, body {
   overflow-y: hidden;
-  font-family: "Roboto Condensed", serif;
+  font-family: "Titillium Web", serif;
 
   font-size: 25px;
 
@@ -24,9 +24,13 @@ html, body {
 
 .question {
   font-size: 40px;
-  line-height: 45px;
+  line-height: 42px;
+  margin-top: 20px;
   margin-bottom: 25px;
   font-weight: 900;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 20px;
 }
 
 .step-intro {
@@ -37,7 +41,7 @@ html, body {
   }
   .fa-chevron-down {
     font-size: 60px;
-    margin-top: 70px;
+    margin-top: 40px;
   }
   .title {
     font-size: 60px;
@@ -46,8 +50,8 @@ html, body {
   hr {
     width: 40px;
     margin: 35px auto;
-    border-color: black;
-    border-width: 3px;
+    border-color: $text-color;
+    border-width: 1px;
   }
 }
 
@@ -56,11 +60,14 @@ html, body {
 
   li {
     padding: 20px;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 70px);
+    margin-top: 15px;
     margin-bottom: 55px;
     list-style-type: none;
 
     box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.25);
+    border-bottom: 16px solid #eeeeee;
+    border-radius: 4px;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
     background: rgb(255,255,255); /* Old browsers */
@@ -78,7 +85,13 @@ html, body {
     .btn {
       margin-bottom: 10px;
       font-weight: normal;
+      text-transform: none;
+      background: white;
     }
+  }
+
+  .btn-link {
+    color: gray;
   }
 }
 

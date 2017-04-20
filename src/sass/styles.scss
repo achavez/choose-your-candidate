@@ -18,13 +18,17 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
 }
 
+.container {
+  max-width: 400px;
+}
+
 .title {
   font-family: "Bungee Inline";
 }
 
 .question {
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 35px;
+  line-height: 35px;
   margin-top: 20px;
   margin-bottom: 25px;
   font-weight: 900;
@@ -104,7 +108,7 @@ html, body {
   height: 55px;
 
   .progress {
-    margin: 15px;
+    margin: 15px 0;
     height: 25px;
   }
 }

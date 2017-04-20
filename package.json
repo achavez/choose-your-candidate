@@ -4,7 +4,9 @@
   "description": "1. `npm install` 2. `gulp` 3. Edit SCSS and JavaScript (ES2015 allowed) in `src/`. Edit HTML in `dist/`.",
   "main": "dist/index.html",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
   "devDependencies": {
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.8",
@@ -17,7 +19,7 @@
     "through2": "^2.0.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

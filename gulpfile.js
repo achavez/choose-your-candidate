@@ -16,7 +16,9 @@ const reload = browserSync.reload;
 
 gulp.task('sass', () => {
   return gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      includePaths: './node_modules/bootstrap-sass/assets/stylesheets/',
+    }).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'));
 });
 

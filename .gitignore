@@ -92,7 +92,3 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/node,gulp,osx
-
-dist/**/*.css
-dist/**/*.js
-dist/**/*.*.map

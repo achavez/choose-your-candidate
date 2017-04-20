@@ -62,6 +62,7 @@ gulp.task('watch', () => {
     files: ['./dist/**/*'],
     open: 'external',
     reloadDebounce: 350,
+    ghostMode: false,
     server: {
       baseDir: './dist/'
     }
